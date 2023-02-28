@@ -1,0 +1,11 @@
+{
+	"title": "Portfolio",
+	"cards": {
+		"1": "Modern banking app made with React and Tailwind. Modern design with responsive layout so that the user with any device can fully enjoy using the application",
+		"2": "A one-page website for a web studio made with Next.js, React, and Sass. Implemented adaptation to all devices, multi-language and order processing in Google Docs and telegram",
+		"3": "A comprehensive web application for the administration of your entire company with the ability to connect API queries to a remote server to create charts for the needs of your business, as well as add employees, upload data and authorization",
+		"4": "Stylish minimalistic web site as a blog/landing for a travel photographer. The simplicity of the site and the depth of the photos complement each other perfectly, making the use of the page user friendly",
+		"5": "A simple application that displays information about popular movies, as well as the ability to search for movies by title and explore information about the cast and reviews of it. Created with React",
+		"6": "An application created using OpenAI`s artificial intelligence API to generate images from a string and the ability to download and share the resulting image"
+	}
+}

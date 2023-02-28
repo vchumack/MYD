@@ -1,0 +1,17 @@
+{
+	"title": "Team",
+	"cards": {
+		"name": {
+			"1": "Pavlo Vovzhynskyy",
+			"2": "Valery Druchinina",
+			"3": "Olga Rozborska",
+			"4": "Tanya"
+		},
+		"pos": {
+			"1": "Frontend developer",
+			"2": "Frontend developer",
+			"3": "UI/UX Designer",
+			"4": "Frontend developer"
+		}
+	}
+}

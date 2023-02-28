@@ -1,0 +1,9 @@
+{
+	"title": "Create your project with us",
+	"form": {
+		"name": "Name",
+		"tel": "Phone number",
+		"email": "E-mail",
+		"comment": "Comment"
+	}
+}

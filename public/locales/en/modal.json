@@ -1,0 +1,16 @@
+{
+	"title": "Create your project with us",
+	"enum": "Choose the desired tariff",
+	"variants": {
+		"1": "Basic",
+		"2": "Business",
+		"3": "Premium",
+		"4": "Consultation"
+	},
+	"form": {
+		"name": "Name",
+		"tel": "Phone number",
+		"email": "E-mail",
+		"comment": "Comment"
+	}
+}

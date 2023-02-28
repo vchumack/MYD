@@ -1,0 +1,49 @@
+{
+	"title": "Price",
+	"cards": {
+		"title": {
+			"1": "Basic",
+			"2": "Business",
+			"3": "Premium"
+		},
+		"list": {
+			"1": {
+				"1": "Landing 1-2 pages",
+				"2": "5-8 blocks on each",
+				"3": "Feedback form",
+				"4": "Privacy page",
+				"5": "Unique design with adaptive"
+			},
+			"2": {
+				"1": "Business site",
+				"2": "3-5 pages",
+				"3": "Unique design",
+				"4": "Routing",
+				"5": "REST API",
+				"6": "Backend"
+			},
+			"3": {
+				"1": "Multifunctional site/store",
+				"2": "Unique design",
+				"3": "Connection of payment systems",
+				"4": "Baskets of goods"
+			}
+		},
+		"bonus": {
+			"1": "As a bonus, when choosing tariffs, we suggest creating an Instagram account and 3 posts",
+			"2": "As a bonus, when choosing tariffs, we suggest creating an Instagram account and 5 posts",
+			"3": "As a bonus, when choosing tariffs, we suggest creating an Instagram account and 10 posts"
+		},
+		"price": {
+			"1": "from 600$",
+			"2": "from 1350$",
+			"3": "from 1600$"
+		},
+		"design": {
+			"1": "Design from 300$",
+			"2": "Design from 500$",
+			"3": "Design from 600$"
+		}
+	},
+	"note": "*domain purchase + hosting, content, logo, stock photos separately Especially for you, we can calculate an individual package for certain requests"
+}
