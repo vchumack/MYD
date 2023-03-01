@@ -9,7 +9,7 @@ const WhyUs = () => {
 	const { t } = useTranslation("whyUs");
 
 	return (
-		<div className={`section ${styles.whyUs}`}>
+		<div className={`section ${styles.whyUs}`} id="why">
 			<div className="container">
 				<Title title={t("title")} />
 				<ul className={styles.list}>

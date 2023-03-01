@@ -1,0 +1,39 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.wrapper {
+	@include flex(center, flex-end);
+	flex-direction: column;
+	gap: 10px;
+	@include media(tablet) {
+		flex-direction: row;
+		align-items: center;
+	}
+	@include media(desktop) {
+		gap: 20px;
+	}
+
+	.contact {
+		color: $primary-text;
+		border: 1px solid $accent-bg;
+		border-radius: 10px;
+
+		font-size: 25px;
+		padding: 4px 10px;
+		transition: $transition-btn;
+
+		@include media(tablet) {
+			font-size: 18px;
+		}
+		@include media(desktop) {
+			padding: 7px 14px;
+			font-size: 20px;
+
+			&:hover,
+			&:focus {
+				color: $dark-text;
+				box-shadow: inset 0 0 0 2em $accent-bg;
+			}
+		}
+	}
+}

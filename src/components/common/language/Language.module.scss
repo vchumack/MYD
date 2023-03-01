@@ -1,0 +1,19 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.language {
+	font-size: 25px;
+	color: $primary-text;
+	transition: $transition;
+	@include media(tablet) {
+		font-size: 18px;
+	}
+	@include media(desktop) {
+		font-size: 20px;
+
+		&:hover,
+		&:focus {
+			color: $accent-text;
+		}
+	}
+}

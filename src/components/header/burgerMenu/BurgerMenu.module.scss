@@ -1,0 +1,29 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.open {
+	@include flex(flex-start, center);
+	backdrop-filter: blur(50px);
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	background-color: $burger-bg;
+	z-index: 4;
+	transform: translateX(0%);
+	transition: $transition;
+}
+
+.closed {
+	@extend .open;
+	transform: translateX(100%);
+}
+
+.main {
+	@include flex(space-between, center);
+	width: 100%;
+	margin-bottom: 50px;
+}

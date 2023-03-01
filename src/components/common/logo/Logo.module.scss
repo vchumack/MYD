@@ -1,0 +1,86 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.logo {
+	position: relative;
+
+	.main {
+		color: $logo-main;
+		font-size: 32px;
+	}
+	.sub {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		position: absolute;
+		top: -8px;
+		left: -20px;
+		width: 130px;
+		color: $logo-sub;
+
+		line-height: 1.1;
+		letter-spacing: 0.1em;
+		.subMain {
+			font-size: 24px;
+		}
+		.subSecondary {
+			font-size: 22px;
+		}
+	}
+}
+//Herr_Von
+// .logo {
+// 	position: relative;
+
+// 	.main {
+// 		color: $logo-main;
+// 		font-size: 32px;
+// 	}
+// 	.sub {
+// 		position: absolute;
+// 		top: -10px;
+// 		left: -5px;
+// 		width: 100px;
+// 		color: $logo-sub;
+
+// 		line-height: 1.1;
+// 		letter-spacing: 0.1em;
+// 		.subMain {
+// 			font-size: 26px;
+// 		}
+// 		.subSecondary {
+// 			font-size: 26px;
+// 		}
+// 	}
+// }
+
+//Arizonia
+// .logo {
+// 	position: relative;
+
+// 	.main {
+// 		color: $logo-main;
+// 		font-size: 32px;
+// 	}
+// 	.sub {
+// 		display: flex;
+// 		align-items: center;
+// 		justify-content: center;
+// 		flex-wrap: wrap;
+// 		position: absolute;
+// 		top: -5px;
+// 		left: -20px;
+// 		width: 130px;
+// 		color: $logo-sub;
+
+// 		line-height: 1.1;
+// 		letter-spacing: 0.1em;
+// 		.subMain {
+// 			font-size: 24px;
+// 		}
+// 		.subSecondary {
+// 			font-size: 20px;
+// 		}
+// 	}
+// }

@@ -5,14 +5,20 @@ $desktop: 1440px;
 $transition: 350ms all ease-in-out;
 
 $primary-bg: #110e0e;
+$header-bg: rgba(17, 14, 14, 0.9);
 $secondary-bg: #381145;
 $accent-bg: #f6b529;
+$burger-bg: rgba(17, 14, 14, 0.8);
 
 $primary-text: #f5deb3;
 $accent-text: #f6b529;
 $back-scene-text: rgba(218, 165, 32, 0.05);
+$logo-main: #6c6c6c;
+$logo-sub: #ffaf00;
+$dark-text: #110e0e;
 
 $transition: 350ms all cubic-bezier(0.4, 0, 0.2, 1);
+$transition-btn: 300ms all ease-in;
 
 $form-linear: linear-gradient(
 	89.77deg,

@@ -1,0 +1,63 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.wrapper {
+	width: 35px;
+	height: 35px;
+	@include flex(center, center);
+}
+.burgerOpen {
+	position: relative;
+	width: 35px;
+	height: 1px;
+	background-color: $accent-bg;
+	transition: $transition;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -8px;
+		width: 35px;
+		height: 1px;
+		background-color: $accent-bg;
+		transition: $transition;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 8px;
+		width: 35px;
+		height: 1px;
+		background-color: $accent-bg;
+		transition: $transition;
+	}
+}
+
+.burgerClose {
+	position: relative;
+	width: 35px;
+	height: 1px;
+	transition: $transition;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 35px;
+		height: 1px;
+		background-color: $accent-bg;
+		transform: rotate(135deg);
+		transition: $transition;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 35px;
+		height: 1px;
+		background-color: $accent-bg;
+		transform: rotate(45deg);
+		transition: $transition;
+	}
+}
