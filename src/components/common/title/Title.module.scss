@@ -1,0 +1,14 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 0.9;
+	color: $accent-text;
+	margin-bottom: 30px;
+	@include media(tablet) {
+		font-size: 50px;
+	}
+}

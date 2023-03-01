@@ -21,13 +21,19 @@ $form-linear: linear-gradient(
 );
 
 $card-linear: linear-gradient(
-	90.6deg,
-	rgba(56, 17, 69, 0.5) -12.67%,
+	180deg,
+	rgb(116 98 124 / 50%) -12.67%,
 	rgba(255, 255, 255, 0) 106.9%
 );
-
 $team-linear: linear-gradient(
 	180deg,
 	#381145 -3.75%,
 	rgba(56, 17, 69, 0) 132.95%
+);
+
+$why-section-linear: linear-gradient(
+	180deg,
+	rgba(17, 14, 14, 1) 1%,
+	rgba(56, 17, 69, 1) 6%,
+	rgba(17, 14, 14, 1) 90%
 );
