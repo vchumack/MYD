@@ -13,7 +13,7 @@ import { toggler } from "@/shared/functions/toggler";
 
 const Header = () => {
 	const { isTablet } = useMedia();
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 
 	useEffect(() => {
 		removeScroll(isOpen);
