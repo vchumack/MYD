@@ -1,4 +1,4 @@
-import { Rubik } from "@next/font/google";
+import { Rubik } from "next/font/google";
 
 import Footer from "./footer/Footer";
 import Header from "./header/Header";

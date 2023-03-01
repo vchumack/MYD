@@ -6,7 +6,7 @@ const Hero = () => {
 	const { t } = useTranslation("hero");
 
 	return (
-		<div className="section">
+		<div className="section" id="home">
 			<div className="container">{t("text")}</div>
 		</div>
 	);
