@@ -9,9 +9,12 @@ $header-bg: rgba(17, 14, 14, 0.9);
 $secondary-bg: #381145;
 $accent-bg: #f6b529;
 $burger-bg: rgba(17, 14, 14, 0.8);
+$light-bg: #f5deb3;
+$main-border: #f5deb3;
 
 $primary-text: #f5deb3;
 $accent-text: #f6b529;
+$brand-text: #381145;
 $back-scene-text: rgba(218, 165, 32, 0.05);
 $logo-main: #6c6c6c;
 $logo-sub: #ffaf00;
@@ -31,6 +34,7 @@ $card-linear: linear-gradient(
 	rgb(116 98 124 / 50%) -12.67%,
 	rgba(255, 255, 255, 0) 106.9%
 );
+
 $team-linear: linear-gradient(
 	180deg,
 	#381145 -3.75%,
@@ -43,3 +47,14 @@ $why-section-linear: linear-gradient(
 	rgba(56, 17, 69, 1) 6%,
 	rgba(17, 14, 14, 1) 90%
 );
+
+$portfolio-card-hover: linear-gradient(
+		269.69deg,
+		rgba(245, 222, 179, 0.2) -107.16%,
+		rgba(255, 255, 255, 0) 156.89%
+	),
+	linear-gradient(
+		90.02deg,
+		rgba(245, 222, 179, 0.25) -173.36%,
+		rgba(255, 254, 254, 0) 107.9%
+	);

@@ -6,7 +6,8 @@ export const useMedia = () => {
 	useEffect(() => {
 		if (window && window.innerWidth >= 768) {
 			setIsTablet(true);
-		} else if (window && window.innerWidth >= 1440) {
+		}
+		if (window && window.innerWidth >= 1440) {
 			setIsTablet(false);
 			setIsDesktop(true);
 		}

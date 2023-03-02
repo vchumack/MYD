@@ -1,0 +1,22 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.link {
+	@include flex(center, baseline);
+	width: fit-content;
+	padding: 14px 18px;
+
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: $dark-text;
+
+	border-radius: 15px;
+	background-color: $light-bg;
+	transition: $transition;
+
+	&:hover,
+	&:focus {
+		color: $brand-text;
+	}
+}
