@@ -12,7 +12,8 @@ import styles from "./Header.module.scss";
 import { toggler } from "@/shared/functions/toggler";
 
 const Header = () => {
-	const { isTablet } = useMedia();
+	const { isTablet, isDesktop } = useMedia();
+
 	const [isOpen, setIsOpen] = useState(false);
 
 	useEffect(() => {
@@ -27,7 +28,7 @@ const Header = () => {
 		<header className={styles.header}>
 			<div className={`container ${styles.wrapper}`}>
 				<Logo />
-				{isTablet ? (
+				{isTablet || isDesktop ? (
 					<>
 						<Navbar />
 						<Subnav />

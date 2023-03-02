@@ -5,7 +5,7 @@ import Header from "./header/Header";
 
 const rubik = Rubik({
 	subsets: ["latin"],
-	weight: ["300", "700"],
+	weight: ["300", "400", "700"],
 });
 
 export default function Layout({ children }) {
