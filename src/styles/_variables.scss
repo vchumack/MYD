@@ -19,42 +19,34 @@ $back-scene-text: rgba(218, 165, 32, 0.05);
 $logo-main: #6c6c6c;
 $logo-sub: #ffaf00;
 $dark-text: #110e0e;
+$error-text: rgb(196, 25, 25);
+
+$submit-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px,
+	rgba(241, 228, 196, 0.615) 0px 7px 13px -3px,
+	rgba(247, 239, 226, 0.54) 0px -3px 0px inset;
 
 $transition: 350ms all cubic-bezier(0.4, 0, 0.2, 1);
 $transition-btn: 300ms all ease-in;
 
-$form-linear: linear-gradient(
-	89.77deg,
-	rgba(56, 17, 69, 0.5) -9.61%,
-	rgba(255, 255, 255, 0) 103.94%
-);
+$form-linear: linear-gradient(154deg, rgb(83 57 93 / 50%) 50.39%, rgba(255, 255, 255, 0) 113.94%);
+;
 
-$card-linear: linear-gradient(
-	180deg,
-	rgb(116 98 124 / 50%) -12.67%,
-	rgba(255, 255, 255, 0) 106.9%
-);
+$card-linear: linear-gradient(180deg,
+		rgb(116 98 124 / 50%) -12.67%,
+		rgba(255, 255, 255, 0) 106.9%);
 
-$team-linear: linear-gradient(
-	180deg,
-	#381145 -3.75%,
-	rgba(56, 17, 69, 0) 132.95%
-);
+$team-linear: linear-gradient(180deg,
+		#381145 -3.75%,
+		rgba(56, 17, 69, 0) 132.95%);
 
-$why-section-linear: linear-gradient(
-	180deg,
-	rgba(17, 14, 14, 1) 1%,
-	rgba(56, 17, 69, 1) 6%,
-	rgba(17, 14, 14, 1) 90%
-);
+$why-section-linear: linear-gradient(180deg,
+		rgba(17, 14, 14, 1) 1%,
+		rgba(56, 17, 69, 1) 6%,
+		rgba(17, 14, 14, 1) 90%);
 
-$portfolio-card-hover: linear-gradient(
-		269.69deg,
+$portfolio-card-hover: linear-gradient(269.69deg,
 		rgba(245, 222, 179, 0.2) -107.16%,
-		rgba(255, 255, 255, 0) 156.89%
-	),
-	linear-gradient(
-		90.02deg,
+		rgba(255, 255, 255, 0) 156.89%),
+	linear-gradient(90.02deg,
 		rgba(245, 222, 179, 0.25) -173.36%,
-		rgba(255, 254, 254, 0) 107.9%
-	);
+		rgba(255, 254, 254, 0) 107.9%);
