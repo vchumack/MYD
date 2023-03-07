@@ -1,7 +1,11 @@
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
+
+import Title from "../common/title/Title";
 import Form from "../common/form/Form";
+import localFont from "next/font/local";
+
 import Whatsup from "../../../public/img/icons/Whatsup.svg";
 import Tg from "../../../public/img/icons/TG2.svg";
 import Viber from "../../../public/img/icons/Viber.svg";
@@ -9,9 +13,11 @@ import Tel from "../../../public/img/icons/Tel.svg";
 import Email from "../../../public/img/icons/Email.svg";
 import Insta from "../../../public/img/icons/instagram.svg";
 
-import Title from "../common/title/Title";
-
 import styles from "./Footer.module.scss";
+
+const ermilov = localFont({
+	src: "../../../public/fonts/ermilov-bold-webfont.woff2",
+});
 
 const Footer = () => {
 	const { t } = useTranslation("footer");
@@ -52,6 +58,9 @@ const Footer = () => {
 					</Link>
 				</div>
 			</div>
+			<p className={`${styles.footerText} ${ermilov.className}`}>
+				Contact us
+			</p>
 		</footer>
 	);
 };
