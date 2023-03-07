@@ -58,6 +58,10 @@ button {
 	cursor: pointer;
 }
 
+textarea {
+	resize: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
 	* {
 		animation-duration: 0.01ms !important;
@@ -69,9 +73,11 @@ button {
 
 .section {
 	padding: 50px 0px;
+
 	@include media(tablet) {
 		padding: 75px 0px;
 	}
+
 	@include media(desktop) {
 		padding: 100px 0px;
 	}
@@ -81,6 +87,7 @@ button {
 	margin: 0px auto;
 	padding: 0px 15px;
 	width: $mobile;
+
 
 	@include media(tablet) {
 		width: $tablet;
@@ -96,4 +103,11 @@ button {
 body {
 	background-color: $primary-bg;
 	color: $primary-text;
+}
+
+/* Cleaning up the autocomplete styles of an input */
+
+:-webkit-autofill {
+	transition: all 5000s ease-in-out 0s;
+
 }

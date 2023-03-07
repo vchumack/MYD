@@ -1,2 +1,177 @@
 @import "@/styles/mixins";
 @import "@/styles/variables";
+
+.footer {
+   position: relative;
+}
+
+.ellipse {
+   position: absolute;
+   top: 45%;
+   width: 537px;
+   height: 390px;
+   border-radius: 400px;
+   background: $secondary-bg;
+   // background: yellow;
+   filter: blur(200px);
+
+   @include media("tablet") {
+      top: 39%;
+      left: 20%;
+   }
+
+   @include media("desktop") {
+      top: 101px;
+      left: 53%;
+      width: 856px;
+      height: 623px;
+
+   }
+
+}
+
+.footerContainer {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-row-gap: 36px;
+
+   @include media("desktop") {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 85px;
+      grid-template-rows: auto auto;
+
+      grid-template-areas:
+         "titleContainer formContainer"
+         "iconsContainer formContainer"
+      ;
+   }
+}
+
+.titleContainer {
+   // grid-row: 1;
+   // grid-column: 1;
+   // grid-row-end: 1;
+
+   @include media("desktop") {
+      grid-column: 1;
+      grid-area: titleContainer;
+   }
+}
+
+.formContainer {
+   // grid-row: 2;
+   // grid-column: 2;
+
+   @include media("desktop") {
+      grid-row: 1;
+      grid-column: 2;
+      grid-area: formContainer;
+   }
+}
+
+.iconsContainer {
+   // grid-row: 1;
+   // grid-column: 2;
+   margin-top: 25px;
+   @include flex();
+   flex-direction: row;
+   justify-content: center;
+   gap: 10px;
+   z-index: 1;
+
+   @include media("tablet") {
+      gap: 30px;
+      margin-top: 40px;
+   }
+
+   @include media("desktop") {
+      grid-row: 2;
+      grid-column: 1;
+      grid-area: iconsContainer;
+   }
+
+   img {
+      width: 40px;
+      height: 40px;
+
+      @include media("tablet") {
+         width: 50px;
+         height: 50px;
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*старые стили*/
+// .footerContainer {
+//    // position: relative;
+//    // @include flex();
+//    // flex-direction: column;
+//    // flex-wrap: nowrap;
+
+
+//    @include media("desktop") {
+//       // flex-direction: row;
+//       // flex-wrap: wrap;
+//    }
+// }
+
+
+
+// .titleContainer,
+// .iconsContainer {
+//    // @include flex();
+//    // flex-direction: column;
+//    // flex-basis: 100%;
+
+//    @include media("desktop") {
+//       // flex-direction: row;
+//       // flex-basis: 50%;
+
+//    }
+// }
+
+// .titleContainer {
+//    @include media("desktop") {
+//       // padding-top: 30px;
+
+//    }
+
+// }
+
+
+// .formContainer {
+//    @include media("desktop") {
+//       // flex-basis: 50%;
+//    }
+// }
+
+// .iconsContainer {
+//    @include flex();
+//    flex-direction: row;
+//    justify-content: center;
+//    gap: 10px;
+
+//    @include media("tablet") {
+//       gap: 30px;
+//    }
+
+//    img {
+//       width: 40px;
+//       height: 40px;
+
+//       @include media("tablet") {
+//          width: 50px;
+//          height: 50px;
+//       }
+//    }
+// }

@@ -1,0 +1,209 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+
+.form {
+   padding: 20px;
+   border-radius: 15px;
+   background: $form-linear;
+   backdrop-filter: blur(10px);
+
+
+   @include flex(center, center);
+   flex-direction: column;
+
+
+   @include media("tablet") {
+      max-width: 564px;
+      margin: 0 auto;
+   }
+
+   @include media("desktop") {
+      max-width: 630px;
+      margin: 0 auto;
+   }
+}
+
+.labelContainer {
+   width: 100%;
+
+   @include media("desktop") {
+      @include flex(center, center);
+      gap: 10px;
+
+   }
+}
+
+
+.label {
+   width: 100%;
+   position: relative;
+}
+
+.input {
+
+   width: 100%;
+   padding: 5px;
+   margin-bottom: 20px;
+
+   background: transparent;
+   outline: none;
+   border: none;
+   border-bottom: 2px solid $accent-text;
+
+   text-align: center;
+   color: $primary-text;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 1.2;
+
+   @include media("tablet") {
+      font-size: 20px;
+   }
+
+   @include media("desktop") {
+      text-align: left;
+      font-size: 25px;
+   }
+
+   &::placeholder {
+      color: $primary-text;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.2;
+
+      @include media("tablet") {
+         font-size: 20px;
+      }
+
+      @include media("desktop") {
+         font-size: 25px;
+      }
+   }
+
+}
+
+
+
+
+.textareaContainer {
+   width: 100%;
+   margin-top: 25px;
+   margin-bottom: 20px;
+
+   border: 2px solid $accent-bg;
+   border-radius: 15px;
+   overflow: hidden;
+   /* Скрывает скроллбары, выходящие за пределы радиуса углов */
+}
+
+.textarea {
+   height: 174px;
+   padding: 10px;
+   text-align: left;
+   font-family: inherit;
+
+   margin: -2px;
+   /* Отрицательный отступ скрывает скроллбары за пределами радиуса углов */
+   overflow-y: scroll;
+   /* Показывает скроллбары только внутри .textarea */
+   border: none;
+   /* Удаляет рамку, которая выходит за пределы радиуса углов */
+}
+
+.textarea::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   background-color: $accent-bg;
+}
+
+.textarea::-webkit-scrollbar {
+   width: 3px;
+}
+
+
+.error {
+   position: absolute;
+   top: 148%;
+   left: 0;
+
+   color: $error-text;
+   font-size: 12px;
+
+   @include media("tablet") {
+      // left: 37%;
+      font-size: 15px;
+   }
+
+   @include media("desktop") {
+      left: 0;
+      top: 72%;
+      font-size: 12px;
+   }
+}
+
+.btnSubmit {
+   padding: 15px;
+   width: 100%;
+
+   color: $brand-text;
+   background-color: $accent-bg;
+
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 1.2;
+
+   border-radius: 15px;
+
+   transition: $transition-btn;
+
+   @include media("tablet") {
+      font-size: 20px;
+   }
+
+   @include media("desktop") {
+      padding: 24px;
+      font-size: 25px;
+      max-width: 356px;
+   }
+
+   &:hover,
+   &:focus {
+      box-shadow: $submit-shadow;
+   }
+
+   &:active {
+      box-shadow: $submit-shadow;
+      background-color: $light-bg;
+   }
+
+}
+
+.successBox {
+   position: relative;
+   width: 100%;
+}
+
+.successText {
+   position: absolute;
+   margin-top: 30px;
+
+   color: $accent-text;
+
+   font-size: 12px;
+   line-height: 1.18;
+   text-align: center;
+
+   @include media("tablet") {
+      font-size: 20px;
+   }
+
+   @include media("desktop") {
+      font-size: 25px;
+   }
+
+}
