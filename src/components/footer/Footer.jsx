@@ -14,9 +14,10 @@ import Email from "../../../public/img/icons/Email.svg";
 import Insta from "../../../public/img/icons/instagram.svg";
 
 import styles from "./Footer.module.scss";
+import BackgroundText from "../common/backgroundText/BackgroundText";
 
 const ermilov = localFont({
-	src: "../../../public/fonts/ermilov-bold-webfont.woff2",
+	src: "../../../public/fonts/ermilov-bold.otf",
 });
 
 const Footer = () => {
@@ -58,9 +59,7 @@ const Footer = () => {
 					</Link>
 				</div>
 			</div>
-			<p className={`${styles.footerText} ${ermilov.className}`}>
-				Contact us
-			</p>
+			<BackgroundText text="Contact us" />
 		</footer>
 	);
 };

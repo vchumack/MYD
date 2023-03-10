@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import styles from "./Title.module.scss";
 
 const ermilov = localFont({
-	src: "../../../../public/fonts/ermilov-bold-webfont.woff2",
+	src: "../../../../public/fonts/ermilov-bold.otf",
 });
 
 const Title = ({ title }) => {
