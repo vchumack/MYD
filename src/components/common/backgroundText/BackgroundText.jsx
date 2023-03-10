@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 
-import styles from "./backgroundText.module.scss";
+import styles from "./BackgroundText.module.scss";
 
 const ermilov = localFont({
 	src: "../../../../public/fonts/ermilov-bold.otf",
