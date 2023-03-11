@@ -1,10 +1,10 @@
 {
 	"title": "Stages",
-	"steps": {
-		"1": "Discussion of the technical task, conclusion of the contract and advance payment",
-		"2": "Creation and design approval",
-		"3": "Site development",
-		"4": "Customer approval for placing the site on the Internet"
-	},
-	"note": "*If necessary, additional edits at any stage"
+	
+		"step1": "Discussion of the technical task, conclusion of the contract and advance payment",
+		"step2": "Creation and design approval",
+		"step3": "Site development",
+		"step4": "Customer approval for placing the site on the Internet",
+	
+	"note": "If necessary, additional edits at any stage"
 }
