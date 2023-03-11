@@ -1,2 +1,472 @@
 @import "@/styles/mixins";
 @import "@/styles/variables";
+
+
+
+.grid {
+   position: relative;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 35px;
+   grid-row-gap: 42px;
+
+   padding-top: 57px;
+
+
+   @include media("tablet") {
+      grid-column-gap: 50px;
+
+      padding-top: 109px;
+   }
+
+   @include media("desktop") {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+
+      grid-template-areas:
+         "text1 skip1 skip2 text2 skip3"
+         "skip4 skip5 text3 skip6 text4"
+      ;
+
+      padding-top: 70px;
+   }
+
+   p {
+      position: relative;
+
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.2;
+
+      @include media("tablet") {
+         font-size: 20px;
+
+      }
+
+      @include media("desktop") {
+         font-size: 25px;
+
+         padding-bottom: 25px;
+         padding-top: 25px;
+      }
+   }
+
+   .textAdditional {
+
+      position: absolute;
+      top: 102%;
+      left: 56%;
+
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 1.2;
+
+      @include media("tablet") {
+         top: 103%;
+         left: 54%;
+
+         font-size: 15px;
+      }
+
+      @include media("desktop") {
+         left: 80%;
+         top: 93%;
+      }
+   }
+
+}
+
+
+.textLeft {
+   text-align: right;
+
+   @include media("desktop") {
+      @include flex(_, flex-end);
+   }
+
+
+   &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: calc(-50% + 21.5px);
+      transform: translate(-50%, -50%);
+
+      width: 25px;
+      height: 25px;
+
+      border-radius: 50%;
+      background: $primary-bg;
+      border: 5px solid $accent-bg;
+
+      @include media("tablet") {
+         right: calc(-18% + 4px);
+
+         width: 30px;
+         height: 30px;
+
+      }
+
+      @include media("desktop") {
+
+         top: 100%;
+         right: calc(-15% + 6px);
+
+         width: 33px;
+         height: 33px;
+
+         border: 8px solid $accent-bg;
+      }
+   }
+
+
+}
+
+.text2::after {
+   @include media("desktop") {
+
+      right: calc(82% + 6px);
+   }
+}
+
+.textRight {
+
+   &::after,
+   p::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: calc(-50% + 21.5px);
+      transform: translate(50%, -50%);
+
+      width: 25px;
+      height: 25px;
+
+      border-radius: 50%;
+      background: $primary-bg;
+      border: 5px solid $accent-bg;
+
+      @include media("tablet") {
+         left: calc(-18% + 4px);
+
+         width: 30px;
+         height: 30px;
+      }
+
+      @include media("desktop") {
+         top: 0;
+         left: calc(-14% + 6px);
+
+         width: 33px;
+         height: 33px;
+
+         border: 8px solid $accent-bg;
+      }
+   }
+}
+
+
+.line {
+   position: absolute;
+   border: 3px solid $accent-bg;
+   top: 0;
+   bottom: -17%;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: -1;
+
+   @include media("tablet") {
+      border: 5px solid $accent-bg;
+      bottom: -27%;
+   }
+
+   @include media("desktop") {
+      width: 100%;
+      bottom: 100%;
+      top: 64.5%;
+   }
+}
+
+
+/* колонки для десктопа */
+.text1 {
+   @include media("desktop") {
+      grid-row: 1;
+      grid-column: 1;
+      grid-area: text1;
+   }
+}
+
+.skip1 {
+   @include media("desktop") {
+      grid-row: 1;
+      grid-column: 2;
+      grid-area: skip1;
+   }
+}
+
+.skip2 {
+   @include media("desktop") {
+      grid-row: 1;
+      grid-column: 3;
+      grid-area: skip2;
+   }
+}
+
+.text2 {
+   @include media("desktop") {
+      grid-row: 1;
+      grid-column: 4;
+      grid-area: text2;
+   }
+}
+
+.skip3 {
+   @include media("desktop") {
+      grid-row: 1;
+      grid-column: 5;
+      grid-area: skip3;
+   }
+}
+
+.skip4 {
+   @include media("desktop") {
+      grid-row: 2;
+      grid-column: 1;
+      grid-area: skip4;
+   }
+}
+
+.text3 {
+   @include media("desktop") {
+      grid-row: 2;
+      grid-column: 3;
+      grid-area: text3;
+   }
+}
+
+.text4 {
+   @include media("desktop") {
+      grid-row: 2;
+      grid-column: 5;
+      grid-area: text4;
+   }
+}
+
+
+/* версия с флексами */
+
+// .box {
+//    position: relative;
+//    @include flex();
+//    flex-direction: column;
+//    gap: 42px;
+//    padding-top: 57px;
+//    padding-bottom: 20px;
+
+//    @include media("desktop") {
+//       flex-direction: row;
+//       gap: 0;
+//       padding-top: 130px;
+//       padding-bottom: 0;
+//    }
+
+//    p {
+//       font-weight: 300;
+//       font-size: 15px;
+//       line-height: 18px;
+
+//       @include media("tablet") {
+//          font-size: 20px;
+//          line-height: 24px;
+//       }
+//    }
+
+// }
+
+// .boxLeft {
+
+//    @include flex(flex-start, center);
+
+//    @include media("desktop") {
+//       flex-direction: column;
+//       width: 25%;
+//       // height: calc(100% / 2 - 30px);
+
+//    }
+
+
+//    p {
+//       position: relative;
+//       width: calc(100% / 2 - 30px);
+//       text-align: right;
+
+//       @include media("desktop") {
+//          width: 100%;
+//          height: calc(100% / 2 - 30px);
+//          display: flex;
+//          align-items: flex-end;
+
+//       }
+//    }
+
+//    p::after {
+//       position: absolute;
+//       content: "";
+//       top: 50%;
+//       right: calc(-50% + 2.5px);
+//       transform: translate(-50%, -50%);
+
+//       width: 25px;
+//       height: 25px;
+//       border-radius: 50%;
+//       background: #171313;
+//       border: 5px solid #F6B529;
+
+//       @include media("tablet") {
+//          right: calc(-18% + 3px);
+//       }
+
+//       @include media("desktop") {
+//          right: 0;
+//          top: 36px;
+//          transform: translate(50%, -50%);
+//       }
+//    }
+// }
+
+
+
+// .boxRight {
+
+//    @include flex(flex-end, center);
+
+//    @include media("desktop") {
+//       flex-direction: column;
+//       // height: calc(100% / 2 - 30px);
+//       width: 25%;
+//    }
+
+//    p {
+//       width: calc(100% / 2 - 30px);
+//       position: relative;
+
+//       @include media("desktop") {
+//          width: 100%;
+
+//          height: calc(100% / 2 - 30px);
+//          display: flex;
+//          align-items: flex-start;
+
+//       }
+//    }
+
+//    p::after {
+//       position: absolute;
+//       content: "";
+//       top: 50%;
+//       left: calc(-50% + 2.5px);
+//       transform: translate(50%, -50%);
+
+//       width: 25px;
+//       height: 25px;
+//       border-radius: 50%;
+//       background: #171313;
+//       border: 5px solid #F6B529;
+
+//       @include media("tablet") {
+//          left: calc(-18% + 3px);
+//       }
+
+//       @include media("desktop") {
+//          left: 0;
+//          top: -31px;
+//          transform: translate(-50%, -50%);
+//       }
+//    }
+// }
+
+// .lastText {
+//    position: relative;
+
+
+//    span {
+//       position: absolute;
+//       top: 100%;
+//       left: 0;
+
+//       padding-top: 10px;
+
+//       font-weight: 300;
+//       font-size: 10px;
+//       line-height: 12px;
+
+//       color: #F5DEB3;
+
+//       @include media("tablet") {
+//          font-size: 15px;
+//          line-height: 18px;
+//       }
+
+//       @include media("desktop") {
+//          left: 0;
+//          top: 76px;
+
+//       }
+//    }
+// }
+
+
+
+
+// .line {
+//    position: absolute;
+//    border: 3px solid #F6B529;
+//    top: 0;
+//    bottom: -12%;
+//    left: 50%;
+//    transform: translateX(-50%);
+//    z-index: -1;
+
+//    @include media("tablet") {
+//       bottom: -20%;
+//    }
+
+//    @include media("desktop") {
+//       // transform: rotate(90deg);
+//       width: 100%;
+//       bottom: 100%;
+//       top: 80%;
+
+//    }
+
+// }
+
+// .boxLeftPosition {
+//    p::after {
+//       @include media("desktop") {
+//          left: 0;
+//          top: 36px;
+//          transform: translate(-50%, -50%);
+//       }
+//    }
+// }
+
+// .boxRightPosition {
+//    @include media("desktop") {
+//       margin-left: 230px;
+//    }
+// }
+
+// было заблочено
+// .box2 {
+//    @include flex(center, center);
+//    width: 25px;
+//    height: 25px;
+//    border-radius: 50%;
+//    background: #171313;
+//    border: 5px solid #F6B529;
+// }
