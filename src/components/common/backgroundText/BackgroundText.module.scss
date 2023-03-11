@@ -1,0 +1,23 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.bgText {
+	position: absolute;
+	bottom: 0;
+
+	color: $back-scene-text;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 90px;
+	line-height: 0.92;
+
+	@include media("tablet") {
+		font-size: 120px;
+		bottom: -3%;
+	}
+
+	@include media("desktop") {
+		font-size: 180px;
+		bottom: -10%;
+	}
+}
