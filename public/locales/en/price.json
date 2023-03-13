@@ -11,22 +11,19 @@
 				"1": "Landing 1-2 pages",
 				"2": "5-8 blocks on each",
 				"3": "Feedback form",
-				"4": "Privacy page",
-				"5": "Unique design with adaptive"
+				"4": "Privacy page"
 			},
 			"2": {
 				"1": "Business site",
 				"2": "3-5 pages",
-				"3": "Unique design",
-				"4": "Routing",
-				"5": "REST API",
-				"6": "Backend"
+				"3": "Routing",
+				"4": "REST API",
+				"5": "Backend"
 			},
 			"3": {
 				"1": "Multifunctional site/store",
-				"2": "Unique design",
-				"3": "Connection of payment systems",
-				"4": "Baskets of goods"
+				"2": "Connection of payment systems",
+				"3": "Baskets of goods"
 			}
 		},
 		"bonus": {
@@ -45,6 +42,9 @@
 			"3": "Design from 600$"
 		}
 	},
-	"note": "*domain purchase + hosting, content, logo, stock photos separately Especially for you, we can calculate an individual package for certain requests",
-	"btn": "Order now"
+	"note": "*domain purchase + hosting, content, logo, stock photos separately",
+	"note2": "Especially for you, we can calculate an individual package for certain requests",
+	"btn": "Order now",
+	"titleModal": "Create your project with us",
+	"enum": "Choose the desired tariff"
 }

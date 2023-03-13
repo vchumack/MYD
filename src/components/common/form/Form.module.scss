@@ -5,7 +5,7 @@
 .form {
    padding: 20px;
    border-radius: 15px;
-   background: $form-linear;
+   // background: $form-linear;
    backdrop-filter: blur(10px);
 
 
@@ -24,13 +24,21 @@
    }
 }
 
+.radioContainer {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   // grid-column-gap: 30px;
+   grid-row-gap: 30px;
+   margin-bottom: 30px;
+
+}
+
 .labelContainer {
    width: 100%;
 
    @include media("desktop") {
       @include flex(center, center);
       gap: 10px;
-
    }
 }
 
@@ -38,6 +46,18 @@
 .label {
    width: 100%;
    position: relative;
+
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 18px;
+
+   @include media("tablet") {
+      font-size: 20px;
+   }
+
+   @include media("desktop") {
+      font-size: 25px;
+   }
 }
 
 .input {
@@ -181,6 +201,12 @@
       background-color: $light-bg;
    }
 
+}
+
+.btnBox {
+   @include media("desktop") {
+      width: 356px;
+   }
 }
 
 .successBox {

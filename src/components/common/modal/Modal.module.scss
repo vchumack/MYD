@@ -1,0 +1,90 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.overlay {
+   position: fixed;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   right: 0;
+
+   background-color: $primary-bg;
+
+   transition: all 0.5s ease-in-out;
+
+   z-index: 999;
+}
+
+.modal {
+   width: 320px;
+   // padding: 40px 30px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+
+   background: linear-gradient(180deg, #381145 -3.75%, rgba(56, 17, 69, 0) 132.95%);
+   border-radius: 10px;
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+   transition: $transition;
+   z-index: 3;
+
+   @include media("tablet") {
+      width: 500px;
+   }
+
+   @include media("desktop") {
+      width: 790px;
+   }
+
+   svg {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+
+      height: 20px;
+      width: 20px;
+      // opacity: 1;
+      fill: $accent-bg;
+      transition: $transition;
+
+      cursor: pointer;
+
+      &:hover {
+         transform: scale(1.2);
+      }
+
+      @include media("tablet") {
+         height: 25px;
+         width: 25px;
+      }
+
+      @include media("desktop") {
+         height: 30px;
+         width: 30px;
+      }
+   }
+}
+
+.overlay.animated {
+   opacity: 0;
+   visibility: hidden;
+
+   .modal {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(-50%, -30%);
+      transition-delay: 0.2s;
+   }
+
+   &.show {
+      opacity: 1;
+      visibility: visible;
+
+      .modal {
+         opacity: 1;
+         visibility: visible;
+         transform: translate(-50%, -50%);
+      }
+   }
+}

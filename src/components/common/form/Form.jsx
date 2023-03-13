@@ -5,9 +5,14 @@ import { ThreeDots } from "react-loader-spinner";
 import axios from "axios";
 
 import styles from "./Form.module.scss";
+import Button from "../button/Button";
 
-const Form = () => {
+const Form = ({ isShowRates = false, backgroundColor }) => {
 	const { t } = useTranslation("footer");
+
+	const stylesBg = {
+		background: backgroundColor,
+	};
 
 	const {
 		register,
@@ -18,7 +23,10 @@ const Form = () => {
 		mode: "all",
 	});
 
+	console.log(errors);
+
 	const onSubmit = async (data) => {
+		console.log(data);
 		// let message = `<i>Application from the website</i>\n`;
 		// message += `<i>Sender's name:</i> <b>${data.name}</b>\n`;
 		// message += `<i>Method of Communication:</i> <b>${data.method}</b>\n`;
@@ -45,7 +53,80 @@ const Form = () => {
 	};
 
 	return (
-		<form className={styles.form}>
+		<form className={styles.form} style={stylesBg}>
+			{isShowRates && (
+				<>
+					<div className={`${styles.label} ${styles.radioContainer}`}>
+						<label>
+							<input
+								{...register("rates", {
+									required: {
+										value: true,
+										message: `${t("messageRequired")}`,
+									},
+								})}
+								className={null}
+								type="radio"
+								value="Базовий"
+								// aria-label={t("name")}
+							/>
+							Базовий
+						</label>
+						<label>
+							<input
+								{...register("rates", {
+									required: {
+										value: true,
+										message: `${t("messageRequired")}`,
+									},
+								})}
+								className={null}
+								type="radio"
+								value="Бізнес"
+								// aria-label={t("name")}
+							/>
+							Бізнес
+						</label>
+						<label>
+							<input
+								{...register("rates", {
+									required: {
+										value: true,
+										message: `${t("messageRequired")}`,
+									},
+								})}
+								className={null}
+								type="radio"
+								value="Преміум"
+								// aria-label={t("name")}
+							/>
+							Преміум
+						</label>
+						<label>
+							<input
+								{...register("rates", {
+									required: {
+										value: true,
+										message: `${t("messageRequired")}`,
+									},
+								})}
+								className={null}
+								type="radio"
+								value="Консультація"
+								// aria-label={t("name")}
+							/>
+							Консультація
+						</label>
+
+						{errors?.rates && (
+							<p className={styles.error}>
+								{errors?.rates?.message || t("messageError")}
+							</p>
+						)}
+					</div>
+				</>
+			)}
+
 			<div className={styles.labelContainer}>
 				<label className={styles.label}>
 					<input
@@ -143,13 +224,15 @@ const Form = () => {
 					visible={true}
 				/>
 			) : (
-				<button
-					className={styles.btnSubmit}
-					onClick={handleSubmit(onSubmit)}
-					type="button"
-				>
-					{t("btn")}
-				</button>
+				<div className={styles.btnBox}>
+					<Button
+						// className={styles.btnSubmit}
+						onClick={handleSubmit(onSubmit)}
+						type="button"
+					>
+						{t("btn")}
+					</Button>
+				</div>
 			)}
 
 			{isSubmitSuccessful && (

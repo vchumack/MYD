@@ -31,7 +31,7 @@ const Footer = () => {
 					<Title title={t("title")} />
 				</div>
 				<div className={styles.formContainer}>
-					<Form />
+					<Form backgroundColor="linear-gradient(154deg, rgb(83 57 93 / 50%) 50.39%, rgba(255, 255, 255, 0) 113.94%)" />
 				</div>
 				<div className={`${styles.iconsContainer}`}>
 					<Link href="/" target="_blank" rel="noopener norefferer">

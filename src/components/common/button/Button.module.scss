@@ -1,0 +1,77 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.btn {
+
+   color: $brand-text;
+   background-color: $accent-bg;
+
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 1.2;
+
+   border-radius: 15px;
+
+   transition: $transition-btn;
+
+   &:hover,
+   &:focus {
+      box-shadow: $submit-shadow;
+   }
+
+   &:active {
+      box-shadow: $submit-shadow;
+      background-color: $light-bg;
+   }
+
+   @include media("tablet") {
+      font-size: 20px;
+   }
+
+   @include media("desktop") {
+      font-size: 25px;
+
+   }
+}
+
+// other sectons
+.fullWidth {
+   width: 100%;
+   padding: 16px;
+
+   @include media("tablet") {
+      padding: 14px;
+   }
+
+   @include media("desktop") {
+      padding: 24px;
+   }
+}
+
+// price section
+.card {
+   @include flex(center);
+   width: 75%;
+   padding: 16px 48px;
+   margin-left: auto;
+   margin-right: auto;
+
+
+   @include media("desktop") {
+      padding: 12px 33px;
+   }
+}
+
+// .btnTablet,
+// .btnDesktop {
+//    @include flex(center);
+//    width: 70%;
+//    padding: 15px;
+//    margin-left: auto;
+//    margin-right: auto;
+// }
+
+// .btnDesktop {
+//    padding: 13px 33px;
+// }
