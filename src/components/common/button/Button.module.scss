@@ -29,10 +29,10 @@
       font-size: 20px;
    }
 
-   @include media("desktop") {
-      font-size: 25px;
+   // @include media("desktop") {
+   //    font-size: 25px;
 
-   }
+   // }
 }
 
 // other sectons
@@ -45,7 +45,7 @@
    }
 
    @include media("desktop") {
-      padding: 24px;
+      padding: 20px;
    }
 }
 
@@ -62,16 +62,3 @@
       padding: 12px 33px;
    }
 }
-
-// .btnTablet,
-// .btnDesktop {
-//    @include flex(center);
-//    width: 70%;
-//    padding: 15px;
-//    margin-left: auto;
-//    margin-right: auto;
-// }
-
-// .btnDesktop {
-//    padding: 13px 33px;
-// }

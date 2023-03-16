@@ -30,8 +30,14 @@ const Footer = () => {
 				<div className={`${styles.titleContainer}`}>
 					<Title title={t("title")} />
 				</div>
-				<div className={styles.formContainer}>
-					<Form backgroundColor="linear-gradient(154deg, rgb(83 57 93 / 50%) 50.39%, rgba(255, 255, 255, 0) 113.94%)" />
+				<div
+					className={styles.formContainer}
+					style={{ padding: "20px" }}
+				>
+					<Form
+						backgroundColor="linear-gradient(154deg, rgb(83 57 93 / 50%) 50.39%, rgba(255, 255, 255, 0) 113.94%)"
+						padding="30px 20px"
+					/>
 				</div>
 				<div className={`${styles.iconsContainer}`}>
 					<Link href="/" target="_blank" rel="noopener norefferer">
