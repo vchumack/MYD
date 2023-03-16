@@ -9,12 +9,6 @@ const typeButton = {
 const Button = ({ children, visualType = "fullWidth", ...restProps }) => {
 	const { isTablet, isDesktop } = useMedia();
 
-	// const btnClass = isDesktop
-	// 	? `${styles.btnDesktop}`
-	// 	: isTablet
-	// 	? `${styles.btnTablet}`
-	// 	: `${styles.btnMob}`;
-
 	return (
 		<button
 			className={`${styles.btn} ${typeButton[visualType]}`}

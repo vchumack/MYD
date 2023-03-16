@@ -1,0 +1,122 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+
+.textareaContainer {
+   width: 100%;
+   margin-top: 25px;
+   margin-bottom: 20px;
+
+   border: 2px solid $accent-bg;
+   border-radius: 15px;
+   overflow: hidden;
+   /* Скрывает скроллбары, выходящие за пределы радиуса углов */
+}
+
+
+.input {
+   width: 100%;
+   padding: 5px;
+   margin-bottom: 20px;
+
+   background: transparent;
+   outline: none;
+   border: none;
+   border-bottom: 2px solid $accent-text;
+
+   text-align: center;
+   color: $primary-text;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 1.2;
+
+   @include media("tablet") {
+      font-size: 20px;
+   }
+
+   @include media("desktop") {
+      text-align: left;
+      // font-size: 25px;
+   }
+
+   &::placeholder {
+      color: $primary-text;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.2;
+
+      @include media("tablet") {
+         font-size: 20px;
+      }
+
+      @include media("desktop") {
+         // font-size: 25px;
+      }
+   }
+
+}
+
+.textarea {
+   height: 150px;
+   padding: 10px;
+   text-align: left;
+   font-family: inherit;
+
+   margin: -2px;
+   /* Отрицательный отступ скрывает скроллбары за пределами радиуса углов */
+   overflow-y: scroll;
+   /* Показывает скроллбары только внутри .textarea */
+   border: none;
+   /* Удаляет рамку, которая выходит за пределы радиуса углов */
+}
+
+.textarea::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   background-color: $accent-bg;
+}
+
+.textarea::-webkit-scrollbar {
+   width: 3px;
+}
+
+.label {
+   width: 100%;
+   position: relative;
+
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 18px;
+
+   @include media("tablet") {
+      font-size: 20px;
+   }
+
+   @include media("desktop") {
+      // font-size: 25px;
+   }
+}
+
+
+.error {
+   position: absolute;
+   top: 148%;
+   left: 0;
+
+   color: $error-text;
+   font-size: 12px;
+
+   @include media("tablet") {
+      // left: 37%;
+      font-size: 15px;
+   }
+
+   @include media("desktop") {
+      left: 0;
+      top: 72%;
+      font-size: 12px;
+   }
+}
