@@ -13,11 +13,9 @@
 
 	@include media("tablet") {
 		font-size: 120px;
-		bottom: -3%;
 	}
 
 	@include media("desktop") {
 		font-size: 180px;
-		bottom: -10%;
 	}
 }

@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import BackgroundText from "../common/backgroundText/BackgroundText";
 import Title from "../common/title/Title";
 
 import styles from "./Steps.module.scss";
@@ -7,7 +8,7 @@ const Steps = () => {
 	const { t } = useTranslation("steps");
 
 	return (
-		<div className="section">
+		<div className={`section ${styles.section}`}>
 			<div className="container">
 				<Title title={t("title")} />
 				<div className={styles.grid}>
@@ -32,6 +33,7 @@ const Steps = () => {
 					<p className={styles.textAdditional}>*{t("note")}</p>
 				</div>
 			</div>
+			<BackgroundText text="stages" />
 		</div>
 	);
 

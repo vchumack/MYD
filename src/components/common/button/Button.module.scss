@@ -10,6 +10,7 @@
    font-weight: 500;
    font-size: 15px;
    line-height: 1.2;
+   border: 1px solid $accent-bg;
 
    border-radius: 15px;
 
@@ -17,13 +18,14 @@
 
    &:hover,
    &:focus {
-      box-shadow: $submit-shadow;
+      color: $primary-text;
+      background-color: transparent;
+      border: 1px solid $accent-bg;
+
+      animation-play-state: paused;
    }
 
-   &:active {
-      box-shadow: $submit-shadow;
-      background-color: $light-bg;
-   }
+
 
    @include media("tablet") {
       font-size: 20px;
