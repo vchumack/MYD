@@ -1,7 +1,20 @@
 @import "@/styles/mixins";
 @import "@/styles/variables";
 
+.section {
+   position: relative;
+   width: 100%;
+   padding-bottom: 120px;
 
+   @include media("tablet") {
+      padding-bottom: 152px;
+   }
+
+   @include media("desktop") {
+      padding-bottom: 120px;
+   }
+
+}
 
 .grid {
    position: relative;
