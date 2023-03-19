@@ -1,2 +1,78 @@
 @import "@/styles/mixins";
 @import "@/styles/variables";
+
+@include media("tablet") {}
+
+@include media("desktop") {}
+
+.section {
+   width: 100%;
+   background: $section-linear;
+}
+
+// .slick-slide {
+//    @include media("tablet") {
+//       width: 440px;
+//    }
+// }
+
+.teamItem {
+   padding: 30px;
+   // width: auto !important;
+
+   background-color: transparent;
+   border: 2px solid rgba(245, 222, 179, 1);
+   border-radius: 10px;
+
+}
+
+.imgBox {
+   overflow: hidden;
+   margin-bottom: 20px;
+
+   @include media("desktop") {
+      width: 200px;
+      height: 300px;
+
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+
+   img {
+      width: 100% !important;
+      height: 100% !important;
+      border-radius: 15px;
+   }
+}
+
+.nameBox {
+   margin-bottom: 20px;
+
+   text-align: center;
+
+   p {
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.53;
+
+      @include media("desktop") {
+         font-size: 20px;
+      }
+   }
+
+   .position {
+      font-weight: 500;
+   }
+
+   span {
+      font-weight: 700;
+      color: $accent-text;
+   }
+
+}
+
+.socialBox {
+   @include flex(center, center);
+   gap: 20px;
+}

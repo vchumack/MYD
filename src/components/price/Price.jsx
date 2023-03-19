@@ -10,6 +10,8 @@ import Rate from "./rate/Rate";
 import { prices } from "@/data/price";
 
 import styles from "./Price.module.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ermilov = localFont({
 	src: "../../../public/fonts/ermilov-bold.otf",
