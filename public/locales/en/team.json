@@ -3,15 +3,15 @@
 	"cards": {
 		"name": {
 			"1": "Pavlo Vovzhynskyy",
-			"2": "Valery Druchinina",
+			"2": "Valeria Druchinina",
 			"3": "Olga Rozborska",
-			"4": "Tanya"
+			"4": "Vita Koval"
 		},
 		"pos": {
 			"1": "Frontend developer",
 			"2": "Frontend developer",
 			"3": "UI/UX Designer",
-			"4": "Frontend developer"
+			"4": "Backend developer"
 		}
 	}
 }
