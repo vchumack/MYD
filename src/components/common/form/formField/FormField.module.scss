@@ -17,7 +17,7 @@
 .input {
    width: 100%;
    padding: 5px;
-   margin-bottom: 20px;
+
 
    background: transparent;
    outline: none;
@@ -84,8 +84,10 @@
 }
 
 .label {
+   display: block;
    width: 100%;
    position: relative;
+   margin-bottom: 20px;
 
    font-weight: 500;
    font-size: 15px;
@@ -103,11 +105,12 @@
 
 .error {
    position: absolute;
-   top: 148%;
+   bottom: 0;
    left: 0;
 
    color: $error-text;
    font-size: 12px;
+   transform: translateY(110%);
 
    @include media("tablet") {
       // left: 37%;
@@ -116,7 +119,8 @@
 
    @include media("desktop") {
       left: 0;
-      top: 72%;
+      // top: 72%;
       font-size: 12px;
+
    }
 }
