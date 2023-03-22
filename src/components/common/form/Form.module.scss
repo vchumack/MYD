@@ -49,11 +49,12 @@
 
 .error {
    position: absolute;
-   top: 148%;
+   bottom: 0;
    left: 0;
 
    color: $error-text;
    font-size: 12px;
+   transform: translateY(170%);
 
    @include media("tablet") {
       // left: 37%;
@@ -62,7 +63,7 @@
 
    @include media("desktop") {
       left: 0;
-      top: 72%;
+
       font-size: 12px;
    }
 }
