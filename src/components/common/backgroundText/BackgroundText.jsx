@@ -7,9 +7,7 @@ const ermilov = localFont({
 });
 
 const BackgroundText = ({ text }) => {
-	return (
-		<div className={`${styles.bgText} ${ermilov.className}`}>{text}</div>
-	);
+	return <p className={`${styles.bgText} ${ermilov.className}`}>{text}</p>;
 };
 
 export default BackgroundText;

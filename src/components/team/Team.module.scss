@@ -6,6 +6,7 @@
 @include media("desktop") {}
 
 .section {
+   display: none;
    width: 100%;
    background: $section-linear;
 }

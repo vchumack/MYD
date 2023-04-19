@@ -5,9 +5,10 @@
 	position: relative;
 
 	.main {
-		color: $logo-main;
+		color: $accent-text;
 		font-size: 32px;
 	}
+
 	.sub {
 		display: flex;
 		align-items: center;
@@ -21,14 +22,17 @@
 
 		line-height: 1.1;
 		letter-spacing: 0.1em;
+
 		.subMain {
 			font-size: 24px;
 		}
+
 		.subSecondary {
 			font-size: 22px;
 		}
 	}
 }
+
 //Herr_Von
 // .logo {
 // 	position: relative;

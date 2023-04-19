@@ -29,13 +29,13 @@ const Logo = ({ toggle }) => {
 			className={`${styles.logo} ${gajraj.className}`}
 			onClick={toggle}
 		>
-			<div className={styles.main}>MYD</div>
-			<div className={`${styles.sub} ${dancing.className}`}>
+			<p className={styles.main}>MYD</p>
+			{/* <div className={`${styles.sub} ${dancing.className}`}>
 				<div className={`${styles.subMain} ${dancing.className}`}>
 					Meet Your
 				</div>
 				<div className={styles.subSecondary}>Developers</div>
-			</div>
+			</div> */}
 		</Link>
 	);
 };
